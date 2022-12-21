@@ -1,0 +1,120 @@
+.all{
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-auto-rows: 1fr;
+ 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    
+  
+    grid-template-areas:  "HEADER MENU MENU MENU"
+                          "HERO HERO HERO HERO"
+                          "HERO HERO HERO HERO"
+                          "HERO HERO HERO HERO"
+                          "HERO HERO HERO HERO"
+                          "HERO HERO HERO HERO"
+                          "HERO HERO HERO HERO"
+                          "MAIN MAIN . IMAGE" 
+                          "MAIN MAIN . IMAGE" 
+                          "MAIN MAIN . EXTRA" 
+                          "MAIN MAIN . EXTRA" 
+                          "BANNER BANNER BANNER BANNER"
+                          "BANNER BANNER BANNER BANNER";
+
+}
+
+
+
+
+.all div{
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    place-items: center;
+  
+}
+.HEADER{
+    background-color: rgb(32, 22, 51);
+    grid-area: HEADER; 
+
+
+}
+.MENU{
+    
+    background-color: red;
+    grid-area: MENU; 
+    
+}
+.HERO{
+    background-color: rgb(133, 133, 213);
+    grid-area: HERO;
+}
+.MAIN{
+    background-color: rgb(11, 11, 22);
+    grid-area: MAIN;
+   
+   
+}
+.IMAGE{
+    background-color: aqua;
+    grid-area: IMAGE;
+ 
+
+}
+.EXTRA{
+    background-color: rgb(9, 126, 87);
+    grid-area: EXTRA;
+   
+}
+
+.BANNER{
+    background-color: rgb(240, 225, 84);
+    grid-area: BANNER;
+   
+}
+
+
+@media screen and (max-width: 768px){
+    .all{
+        
+        grid-template-areas: 
+        "HEADER HEADER HEADER HEADER"
+        "HERO HERO HERO HERO"
+        "HERO HERO HERO HERO"
+        "HERO HERO HERO HERO"
+        "HERO HERO HERO HERO"
+        "MENU MAIN MAIN MAIN"
+        "MENU MAIN MAIN MAIN"
+        "MENU MAIN MAIN MAIN"
+        "MENU BANNER BANNER BANNER"
+        "MENU BANNER BANNER BANNER"
+        "MENU EXTRA EXTRA IMAGE"
+        "MENU EXTRA EXTRA IMAGE"
+        ;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .all{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "HEADER"
+        "MENU"
+        "HERO"
+        "HERO"
+        "HERO"
+        "MAIN"
+        "MAIN"
+        "MAIN"
+        "BANNER"
+        "BANNER"
+        "EXTRA"
+        "EXTRA"
+        "IMAGE"
+        "IMAGE"
+
+    }
+}
